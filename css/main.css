@@ -560,7 +560,8 @@ main .app {
       width: 100%; }
       @media (max-width: 450px) {
         .sub-page .partners .partner-card img {
-          object-fit: contain; } }
+          object-fit: contain;
+          height: fit-content; } }
 .sub-page .news {
   flex-wrap: wrap;
   margin-bottom: 225px; }

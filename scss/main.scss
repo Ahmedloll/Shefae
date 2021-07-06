@@ -695,6 +695,7 @@ main {
         width: 100%;
         @media (max-width: 450px) {
           object-fit: contain;
+          height: fit-content;
         }
       }
     }
