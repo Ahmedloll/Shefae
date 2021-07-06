@@ -548,9 +548,8 @@ main .app {
     width: 28%;
     box-shadow: 0px 3px 23px #00000029;
     border-radius: 10px;
-    padding: 0 1.5%;
-    margin-bottom: 30px;
-    background-color: #397ec1; }
+    padding: 1.5%;
+    margin-bottom: 30px; }
     @media (max-width: 800px) {
       .sub-page .partners .partner-card {
         width: 45%; } }
@@ -561,8 +560,7 @@ main .app {
       width: 100%; }
       @media (max-width: 450px) {
         .sub-page .partners .partner-card img {
-          object-fit: contain;
-          height: fit-content; } }
+          object-fit: contain; } }
 .sub-page .news {
   flex-wrap: wrap;
   margin-bottom: 225px; }
