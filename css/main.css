@@ -46,6 +46,9 @@ a {
 .space-between {
   justify-content: space-between; }
 
+.wrap {
+  flex-wrap: wrap; }
+
 .title {
   width: fit-content;
   margin: 0 auto;
@@ -55,7 +58,8 @@ a {
     margin: 0;
     opacity: 1;
     width: fit-content;
-    padding: 0 40px; }
+    padding: 0 40px;
+    text-align: center; }
   .title div {
     color: #305069;
     font-size: 29px;
@@ -89,12 +93,18 @@ header nav {
     @media (max-width: 570px) {
       header nav img {
         width: 30vw; } }
+    @media (max-width: 350px) {
+      header nav img {
+        width: 40vw; } }
   header nav ul.flex {
     flex-grow: 1; }
     header nav ul.flex li {
       padding: 10px;
       display: flex;
       align-items: center; }
+      @media (max-width: 960px) {
+        header nav ul.flex li {
+          border-bottom: 1px solid lightgray; } }
       header nav ul.flex li a {
         color: #305069;
         font-size: 18px;
@@ -112,22 +122,36 @@ header nav {
       border: 1px solid black;
       border-radius: 5px;
       z-index: 1; }
+      @media (max-width: 960px) {
+        header nav ul.flex #servicesMenu,
+        header nav ul.flex #projectsMenu {
+          top: 120px; } }
       header nav ul.flex #servicesMenu li,
       header nav ul.flex #projectsMenu li {
         border-bottom: 1px solid lightgray; }
+    @media (max-width: 960px) {
+      header nav ul.flex #servicesMenu {
+        top: 120px; } }
+    @media (max-width: 960px) {
+      header nav ul.flex #projectsMenu {
+        top: 267px; } }
     @media (max-width: 960px) {
       header nav ul.flex {
         position: absolute;
         width: 40%;
         padding: 20px;
         flex-direction: column;
-        top: 115px;
+        top: 84px;
         background-color: white;
         border: 1px solid black;
         border-radius: 3px;
         right: 0;
-        display: none; } }
-  @media (max-width: 1140px) {
+        display: none;
+        z-index: 1; } }
+    @media (max-width: 410px) {
+      header nav ul.flex {
+        width: 80%; } }
+  @media (max-width: 1155px) {
     header nav {
       padding: 0px 5vw; } }
 
@@ -143,9 +167,19 @@ main .banner {
   padding: 50px 11.5vw;
   min-height: 615px;
   background-color: #e8f1ff; }
+  @media (max-width: 1155px) {
+    main .banner {
+      padding: 0px 5vw; } }
+  @media (max-width: 650px) {
+    main .banner {
+      flex-direction: column-reverse; } }
   main .banner .right-sec {
     width: 50%;
     color: #231f52; }
+    @media (max-width: 650px) {
+      main .banner .right-sec {
+        margin: 50px 0;
+        width: 100%; } }
     main .banner .right-sec span {
       font-size: 25px;
       font-weight: 600;
@@ -170,25 +204,58 @@ main .banner {
   main .banner img {
     width: 50%;
     height: fit-content; }
+    @media (max-width: 650px) {
+      main .banner img {
+        width: 60%;
+        margin: 30px 0; } }
+main .sub-banner {
+  min-height: unset;
+  margin: 50px 11.5vw;
+  padding: 50px 10vw;
+  box-shadow: 0px 3px 20px #00000029;
+  border-radius: 18px; }
 main .logos {
   padding: 20px 11.5vw;
   box-shadow: 0px 3px 15px #00000029; }
+  @media (max-width: 650px) {
+    main .logos {
+      justify-content: center; } }
   main .logos img {
-    width: 7vw;
+    width: 12%;
     filter: grayscale(100%);
     opacity: 0.5;
     transition: all 0.5s; }
+    @media (max-width: 840px) {
+      main .logos img {
+        width: 17%; } }
+    @media (max-width: 650px) {
+      main .logos img {
+        width: 25%;
+        padding: 1%; } }
     main .logos img:hover {
       transform: scale(1.3);
       filter: none;
       opacity: 1; }
 main .complete-organization {
   padding: 150px 11.5vw; }
+  @media (max-width: 1155px) {
+    main .complete-organization {
+      padding: 150px 5vw; } }
+  @media (max-width: 800px) {
+    main .complete-organization {
+      flex-direction: column-reverse;
+      align-items: center; } }
   main .complete-organization img {
     width: 40%; }
+    @media (max-width: 800px) {
+      main .complete-organization img {
+        margin-bottom: 50px; } }
   main .complete-organization .right-sec {
     color: #231f52;
     width: 40%; }
+    @media (max-width: 800px) {
+      main .complete-organization .right-sec {
+        width: 90%; } }
     main .complete-organization .right-sec div {
       font-size: 35px;
       margin-bottom: 20px; }
@@ -199,17 +266,46 @@ main .complete-organization {
 main .vision {
   padding: 0px 11.5vw;
   margin-bottom: 50px; }
+  @media (max-width: 1155px) {
+    main .vision {
+      padding: 0px 5vw; } }
   main .vision .card {
     position: relative;
     width: 28%;
     padding-bottom: 10px;
     margin-bottom: 50px; }
+    @media (max-width: 850px) {
+      main .vision .card {
+        width: 100%;
+        display: flex; } }
+    @media (max-width: 415px) {
+      main .vision .card {
+        flex-direction: column;
+        align-items: center; } }
     main .vision .card img[alt="background img"] {
       width: 85%;
       float: left; }
+      @media (max-width: 850px) {
+        main .vision .card img[alt="background img"] {
+          width: 28%;
+          float: none;
+          margin-left: 20px; } }
+      @media (max-width: 620px) {
+        main .vision .card img[alt="background img"] {
+          width: 45%;
+          float: none;
+          margin-left: 20px; } }
     main .vision .card img[alt="shape"] {
       position: absolute;
-      top: -40px; }
+      top: -3vw;
+      right: 0px;
+      width: 2.5vw; }
+      @media (max-width: 1155px) {
+        main .vision .card img[alt="shape"] {
+          right: 0.5vw; } }
+      @media (max-width: 850px) {
+        main .vision .card img[alt="shape"] {
+          display: none; } }
     main .vision .card .text {
       position: absolute;
       width: 62.5%;
@@ -219,6 +315,9 @@ main .vision {
       border-radius: 10px;
       color: #305069;
       height: 155px; }
+      @media (max-width: 850px) {
+        main .vision .card .text {
+          position: unset; } }
       main .vision .card .text h3 {
         font-size: 16px;
         font-weight: 200;
@@ -230,6 +329,9 @@ main .vision {
 main .services {
   padding: 0px 11.5vw;
   margin-bottom: 100px; }
+  @media (max-width: 1155px) {
+    main .services {
+      padding: 0px 5vw; } }
   main .services .swiper-wrapper {
     height: fit-content;
     padding-bottom: 75px; }
@@ -258,11 +360,22 @@ main .services {
   main .services .swiper-pagination-bullet-active {
     background-image: linear-gradient(260deg, #397ec1, #1d3f61); }
 main .app {
-  padding: 0px 11.5vw; }
+  padding: 0px 11.5vw;
+  margin-bottom: 70px; }
+  @media (max-width: 750px) {
+    main .app {
+      justify-content: center; } }
   main .app img {
     width: 30%; }
+    @media (max-width: 750px) {
+      main .app img {
+        margin-bottom: 30px;
+        width: 50%; } }
   main .app .left-sec {
     width: 50%; }
+    @media (max-width: 750px) {
+      main .app .left-sec {
+        width: 80%; } }
     main .app .left-sec h2 {
       color: #397ec1;
       font-size: 18px; }
@@ -297,83 +410,220 @@ main .app {
 
 .sub-page .secondary-banner {
   position: relative;
-  min-height: 455px;
+  min-height: 30vw;
   height: fit-content;
   background-image: url(../img/Group\ 2539.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  @media (max-width: 780px) {
+    .sub-page .secondary-banner {
+      min-height: 40vw; } }
+  @media (max-width: 450px) {
+    .sub-page .secondary-banner {
+      min-height: 55vw; } }
   .sub-page .secondary-banner img {
     position: absolute; }
 .sub-page .goals-banner img {
-  bottom: -1px; }
+  width: 30%;
+  bottom: -0.055vw; }
+  @media (max-width: 780px) {
+    .sub-page .goals-banner img {
+      width: 40%;
+      bottom: -0.2vw; } }
+  @media (max-width: 450px) {
+    .sub-page .goals-banner img {
+      bottom: -0.2vw;
+      width: 55%; } }
 .sub-page .vision-banner img {
-  bottom: -108px; }
+  width: 60%;
+  bottom: -7.3vw; }
+  @media (max-width: 780px) {
+    .sub-page .vision-banner img {
+      width: 75%;
+      bottom: -9.1vw; } }
+  @media (max-width: 450px) {
+    .sub-page .vision-banner img {
+      bottom: -10.2vw;
+      width: 88%; } }
+.sub-page .care-banner img {
+  width: 30%;
+  bottom: 0vw; }
+  @media (max-width: 780px) {
+    .sub-page .care-banner img {
+      width: 40%; } }
+  @media (max-width: 450px) {
+    .sub-page .care-banner img {
+      width: 60%; } }
 .sub-page .about-us-banner img {
-  bottom: -102px; }
+  width: 40%;
+  bottom: -6.4vw; }
+  @media (max-width: 780px) {
+    .sub-page .about-us-banner img {
+      width: 50%;
+      bottom: -8vw; } }
+  @media (max-width: 450px) {
+    .sub-page .about-us-banner img {
+      bottom: -10.2vw;
+      width: 63%; } }
+.sub-page .service-banner img {
+  width: 40%;
+  bottom: 0vw; }
+  @media (max-width: 780px) {
+    .sub-page .service-banner img {
+      width: 50%; } }
+  @media (max-width: 450px) {
+    .sub-page .service-banner img {
+      width: 70%; } }
 .sub-page .safety-banner img {
-  bottom: -71px; }
+  width: 23%;
+  bottom: -4.8vw; }
+  @media (max-width: 780px) {
+    .sub-page .safety-banner img {
+      width: 30%;
+      bottom: -6.2vw; } }
+  @media (max-width: 450px) {
+    .sub-page .safety-banner img {
+      bottom: -9.2vw;
+      width: 45%; } }
 .sub-page .shafae-banner img {
-  bottom: 0px; }
+  width: 90%;
+  bottom: -0.1vw; }
 .sub-page .about-us {
   padding: 0px 11.5vw;
   margin: 100px 0; }
+  @media (max-width: 1155px) {
+    .sub-page .about-us {
+      padding: 0px 5vw; } }
   .sub-page .about-us p {
     color: #aaaaaa;
     font-weight: 600; }
   .sub-page .about-us .imgs {
     margin-top: 100px; }
+    @media (max-width: 430px) {
+      .sub-page .about-us .imgs {
+        justify-content: center; } }
     .sub-page .about-us .imgs img {
-      width: 18vw; }
-.sub-page .vision-messege {
-  margin-bottom: 150px; }
-  .sub-page .vision-messege .card {
-    width: 45%;
-    background: #f8f8f8 0% 0% no-repeat padding-box;
+      width: 20%; }
+      @media (max-width: 700px) {
+        .sub-page .about-us .imgs img {
+          width: 45%; } }
+      @media (max-width: 430px) {
+        .sub-page .about-us .imgs img {
+          width: 70%; } }
+@media (max-width: 850px) {
+  .sub-page .vision-messege {
+    justify-content: center; } }
+.sub-page .vision-messege .card {
+  width: 45%;
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 23px #00000029;
+  border-radius: 10px;
+  align-items: flex-start;
+  padding: 1.5%; }
+  @media (max-width: 850px) {
+    .sub-page .vision-messege .card {
+      width: 80%;
+      margin-bottom: 40px; } }
+  .sub-page .vision-messege .card img {
+    margin-left: 15px;
+    margin-top: 35px;
+    width: 20%; }
+  .sub-page .vision-messege .card .text {
+    margin-top: 20px; }
+.sub-page .partners {
+  flex-wrap: wrap;
+  margin-bottom: 225px; }
+  @media (max-width: 450px) {
+    .sub-page .partners {
+      justify-content: center; } }
+  .sub-page .partners .partner-card {
+    width: 28%;
     box-shadow: 0px 3px 23px #00000029;
     border-radius: 10px;
-    align-items: flex-start;
-    padding: 1.5%; }
-    .sub-page .vision-messege .card img {
-      margin-left: 15px;
-      margin-top: 35px;
-      width: 20%; }
-    .sub-page .vision-messege .card .text {
-      margin-top: 20px; }
-.sub-page .goals {
-  flex-wrap: wrap; }
-  .sub-page .goals .goal-card {
-    width: 25%;
-    padding: 20px;
-    border-radius: 30px 5px;
+    padding: 1.5%;
     margin-bottom: 30px; }
-    .sub-page .goals .goal-card:nth-child(4n + 1) {
-      background-color: rgba(57, 126, 193, 0.1); }
-    .sub-page .goals .goal-card:nth-child(4n + 2) {
-      background-color: rgba(238, 23, 23, 0.1); }
-    .sub-page .goals .goal-card:nth-child(4n + 3) {
-      background-color: rgba(253, 220, 44, 0.1); }
-    .sub-page .goals .goal-card:nth-child(4n + 4) {
-      background-color: rgba(0, 254, 68, 0.1); }
-    .sub-page .goals .goal-card p {
-      color: black;
-      height: fit-content; }
-.sub-page .safety .step {
-  width: 55vw;
-  border: 1px dashed #fbfbfb;
-  background: #fbfbfb 0% 0% no-repeat padding-box;
-  border: 1px dashed #397ec1;
-  border-radius: 13px;
-  margin-bottom: 20px;
-  padding: 20px; }
-  .sub-page .safety .step span {
-    color: #231f52;
-    line-height: 50px;
-    font-size: 50px;
-    font-weight: 600;
-    margin: 0 20px; }
-  .sub-page .safety .step p {
-    color: #231f52; }
+    @media (max-width: 800px) {
+      .sub-page .partners .partner-card {
+        width: 45%; } }
+    @media (max-width: 450px) {
+      .sub-page .partners .partner-card {
+        width: 80%; } }
+    .sub-page .partners .partner-card img {
+      width: 100%; }
+.sub-page .news {
+  flex-wrap: wrap;
+  margin-bottom: 225px; }
+  @media (max-width: 900px) {
+    .sub-page .news {
+      justify-content: center; } }
+  .sub-page .news .new-card {
+    width: 28%;
+    box-shadow: 0px 3px 23px #00000029;
+    border-radius: 10px;
+    padding: 1.5%;
+    margin-bottom: 30px; }
+    @media (max-width: 900px) {
+      .sub-page .news .new-card {
+        width: 80%;
+        padding: 3%; } }
+    .sub-page .news .new-card img {
+      width: 100%;
+      height: 245px;
+      object-fit: none; }
+    .sub-page .news .new-card h3 {
+      color: #231f52; }
+    .sub-page .news .new-card p {
+      color: #aaaaaa; }
+@media (max-width: 540px) {
+  .sub-page .goals {
+    justify-content: center; } }
+.sub-page .goals .goal-card {
+  width: 25%;
+  padding: 20px;
+  border-radius: 30px 5px;
+  margin-bottom: 30px; }
+  @media (max-width: 960px) {
+    .sub-page .goals .goal-card {
+      width: 38%; } }
+  @media (max-width: 540px) {
+    .sub-page .goals .goal-card {
+      width: 60%; } }
+  .sub-page .goals .goal-card:nth-child(4n + 1) {
+    background-color: rgba(57, 126, 193, 0.1); }
+  .sub-page .goals .goal-card:nth-child(4n + 2) {
+    background-color: rgba(238, 23, 23, 0.1); }
+  .sub-page .goals .goal-card:nth-child(4n + 3) {
+    background-color: rgba(253, 220, 44, 0.1); }
+  .sub-page .goals .goal-card:nth-child(4n + 4) {
+    background-color: rgba(0, 254, 68, 0.1); }
+  .sub-page .goals .goal-card p {
+    color: black;
+    height: fit-content; }
+.sub-page .safety {
+  width: 70%; }
+  @media (max-width: 860px) {
+    .sub-page .safety {
+      width: 85%; } }
+  .sub-page .safety .step {
+    width: 90%;
+    border: 1px dashed #fbfbfb;
+    background: #fbfbfb 0% 0% no-repeat padding-box;
+    border: 1px dashed #397ec1;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    padding: 20px 5%; }
+    @media (max-width: 445px) {
+      .sub-page .safety .step {
+        flex-direction: column; } }
+    .sub-page .safety .step span {
+      color: #231f52;
+      line-height: 50px;
+      font-size: 50px;
+      font-weight: 600;
+      margin: 0 20px; }
+    .sub-page .safety .step p {
+      color: #231f52; }
 .sub-page .sport {
   position: relative;
   margin-bottom: 320px; }
@@ -381,6 +631,133 @@ main .app {
     position: absolute;
     left: 60px;
     width: 60%; }
+@media (max-width: 700px) {
+  .sub-page .contact {
+    justify-content: center; } }
+.sub-page .contact .right-sec {
+  width: 45%; }
+  @media (max-width: 700px) {
+    .sub-page .contact .right-sec {
+      width: 100%;
+      align-items: center; } }
+  .sub-page .contact .right-sec img {
+    width: 25vw;
+    margin-bottom: 50px; }
+    @media (max-width: 700px) {
+      .sub-page .contact .right-sec img {
+        width: 40vw; } }
+  .sub-page .contact .right-sec p {
+    margin-bottom: 30px; }
+  .sub-page .contact .right-sec ul li {
+    display: flex;
+    align-items: center;
+    color: #aaaaaa;
+    font-weight: 600;
+    margin-bottom: 25px; }
+    .sub-page .contact .right-sec ul li img {
+      width: 25px;
+      margin: 0;
+      margin-left: 10px; }
+.sub-page .contact form {
+  width: 45%;
+  margin: 100px 0; }
+  @media (max-width: 700px) {
+    .sub-page .contact form {
+      width: 100%;
+      align-items: center; } }
+  .sub-page .contact form input,
+  .sub-page .contact form textarea {
+    width: 100%;
+    border: 0.5px solid #397ec1;
+    border-radius: 9px;
+    padding: 15px;
+    margin-bottom: 20px; }
+  .sub-page .contact form input {
+    height: 50px; }
+  .sub-page .contact form textarea {
+    resize: vertical; }
+  .sub-page .contact form button {
+    height: 50px;
+    width: fit-content;
+    border-radius: 25px;
+    padding: 20px 30px;
+    left: 0;
+    border-radius: 25px;
+    border: none;
+    background-image: linear-gradient(260deg, #397ec1, #1d3f61);
+    color: white; }
+.sub-page .hotline {
+  background-image: linear-gradient(260deg, #397ec1, #1d3f61);
+  color: white;
+  line-height: 50px;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  direction: ltr;
+  padding: 5% 14%;
+  border-radius: 10px;
+  margin-top: 100px; }
+  @media (max-width: 400px) {
+    .sub-page .hotline {
+      line-height: 35px; } }
+  .sub-page .hotline span {
+    font-size: 56px; }
+    @media (max-width: 400px) {
+      .sub-page .hotline span {
+        font-size: 35px; } }
+.sub-page .services-page {
+  direction: rtl;
+  margin: 100px 0; }
+  .sub-page .services-page .services-sec .swiper-container {
+    width: 100%;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 30px; }
+    .sub-page .services-page .services-sec .swiper-container .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 35%;
+      height: fit-content;
+      margin-bottom: 30px; }
+      .sub-page .services-page .services-sec .swiper-container .swiper-slide .swiper-slide-shadow-left,
+      .sub-page .services-page .services-sec .swiper-container .swiper-slide .swiper-slide-shadow-right {
+        background-image: none; }
+      .sub-page .services-page .services-sec .swiper-container .swiper-slide .service-card {
+        border: 1px solid #aaaaaa;
+        border-radius: 30px; }
+        @media (max-width: 890px) {
+          .sub-page .services-page .services-sec .swiper-container .swiper-slide .service-card {
+            width: 80%;
+            margin: auto; } }
+        .sub-page .services-page .services-sec .swiper-container .swiper-slide .service-card img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover; }
+        .sub-page .services-page .services-sec .swiper-container .swiper-slide .service-card p {
+          padding: 0 30px;
+          font-weight: 600; }
+        .sub-page .services-page .services-sec .swiper-container .swiper-slide .service-card button {
+          height: 50px;
+          width: fit-content;
+          padding: 20px 30px;
+          left: 0;
+          border-radius: 25px;
+          border: none;
+          background-image: linear-gradient(260deg, #397ec1, #1d3f61);
+          color: white;
+          margin-bottom: 30px;
+          cursor: pointer; }
+    .sub-page .services-page .services-sec .swiper-container .swiper-slide-prev {
+      transform: translate3d(0px, 0px, 0px) rotate(8deg) scale(1) !important; }
+    .sub-page .services-page .services-sec .swiper-container .swiper-slide-next {
+      transform: translate3d(0px, 0px, 0px) rotate(-8deg) scale(1) !important; }
+  .sub-page .services-page .services-sec .swiper-pagination-bullet {
+    width: 27px;
+    height: 27px;
+    background-color: #aaaaaa; }
+  .sub-page .services-page .services-sec .swiper-pagination-bullet-active {
+    background-image: linear-gradient(260deg, #397ec1, #1d3f61); }
 
 footer .light-back {
   background-color: #e8f1ff;
@@ -422,7 +799,7 @@ footer .light-back {
       width: 50%; }
       footer .light-back li ul img {
         width: 19px; }
-  @media (max-width: 1140px) {
+  @media (max-width: 1155px) {
     footer .light-back {
       padding: 50px 5vw; } }
 footer .dark-section {

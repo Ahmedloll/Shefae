@@ -5,66 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shefae</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
-  <body>
+  <body class="sub-page">
     <!-- Staring header -->
     <header>
-      <nav class="flex">
-        <img src="img/logo.png" alt="" />
-        <ul class="flex">
+      <nav class="flex space-between">
+        <span id="menu"><i class="fas fa-bars"></i></span>
+        <h1><img src="img/logo.png" alt="Shefae logo" /></h1>
+        <ul class="flex space-between">
           <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="services.html">خدماتنا</a></li>
+          <li id="ourServices">
+            <a href="#">خدماتنا <i class="fas fa-sort-down"></i></a>
+            <div id="servicesMenu">
+              <ul>
+                <li><a href="companies-services.html">خدمات الشركات</a></li>
+                <li><a href="personal-services.html">خدمات الأفراد</a></li>
+                <li>
+                  <a href="safety.html"
+                    >للصحة و السلامة المهنية<br />
+                    و تأمين بيئة العمل</a
+                  >
+                </li>
+
+                <li><a href="shefae-care.html">لمقدمي الخدمات الطبية</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="news.html">الأخبار</a></li>
-          <li><a href="events.html">الفاعليات</a></li>
-          <li><a href="projects.html">مشاريعنا</a></li>
+          <li><a href="events.html">الفعاليات</a></li>
+          <li id="ourProjects">
+            <a href="#">مشاريعنا <i class="fas fa-sort-down"></i></a>
+            <div id="projectsMenu">
+              <ul>
+                <li><a href="shefae-sport.html">شفائي سبورت</a></li>
+                <li><a href="shefae-shop.html">شفائي شوب</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="partners.html">شركاؤنا</a></li>
           <li><a href="about-us.html">من نحن</a></li>
-          <li><a href="contact-us.html">اتصل بنا</a></li>
+          <li><a class="active" href="contact-us.html">اتصل بنا</a></li>
         </ul>
       </nav>
     </header>
     <!-- Ening header -->
-    <!-- Starting footer -->
     <main>
-      <div>
-        <div>
-          <img src="img/logo.png" alt="logo" />
-          <p>
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-            شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
-          </p>
-          <ul>
-            <li>
-              المجاورة 6 تقسييك التربية و التعليم ميدان الأردنية العاشر من رمضان
-            </li>
-            <li>+(20)1009009380</li>
+      <section class="secondary-banner about-us-banner flex center">
+        <img src="img/Group 2538.png" alt="photo" />
+      </section>
+      <section class="about-us">
+        <div class="flex space-between contact wrap">
+          <div class="right-sec flex col">
+            <img src="img/logo.png" alt="logo" />
+            <p>
+              شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
+              شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
+              شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
+              شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية
+            </p>
+            <ul>
+              <li>
+                <img src="img/placeholder.svg" alt="location icon" />
+                المجاورة 6 تقسييك التربية و التعليم ميدان الأردنية العاشر من
+                رمضان
+              </li>
+              <li>
+                <img src="img/phone-call.svg" alt="phone icon" />
+                +(20)1009009380
+              </li>
 
-            <li>info@Shefae.com</li>
-            <li>www.shefae.com</li>
+              <li>
+                <img src="img/email.svg" alt="email icon" /> info@Shefae.com
+              </li>
+              <li>
+                <img src="img/global.svg" alt="global icon" /> www.shefae.com
+              </li>
+            </ul>
+          </div>
+          <form class="flex col align">
+            <input type="text" placeholder="الاسم" required />
+            <input type="email" placeholder="البريد الإلكتروني" required />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="الرسالة"
+              required
+            ></textarea>
+            <button type="submit">إرسال</button>
+          </form>
+        </div>
+        <div class="hotline">
+          الخط الساخن الإلكتروني<br />
+          <span> 1550.tel </span>
+        </div>
+      </section>
+    </main>
+    <!-- Starting footer -->
+    <footer>
+      <div class="flex space-between light-back">
+        <img src="img/logo.png" alt="Shefae logo" class="logo" />
+        <div class="sec">
+          <h2>خدمات شفائي</h2>
+          <ul>
+            <li><a href="shefae-shop.html">شفائي شوب</a></li>
+            <li><a href="shefae-sport.html">شفائي سبورت</a></li>
+            <li><a href="companies-services.html">خدمات الشركات</a></li>
+            <li><a href="personal-services.html">خدمات الأفراد</a></li>
+            <li>
+              <a href="safety.html"
+                >للصحة و السلامة المهنية<br />
+                و تأمين بيئة العمل</a
+              >
+            </li>
           </ul>
         </div>
-        <form>
-          <input type="text" placeholder="الاسم" />
-          <input type="text" placeholder="البريد الإلكتروني" />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="الرسالة"
-          ></textarea>
-          <button type="submit">إرسال</button>
-        </form>
+        <div class="sec">
+          <h2>الموقع</h2>
+          <ul>
+            <li><a href="about-us.html">من نحن</a></li>
+            <li><a href="vision-messege.html">الرؤية و الرسالة</a></li>
+            <li><a href="goals.html">الأهداف</a></li>
+
+            <li><a href="">خدمات الشركة</a></li>
+            <li><a href="companies-services.html">خدمات الشركات</a></li>
+            <li><a href="personal-services.html">خدمات الأفراد</a></li>
+            <li><a href="contact-us.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="sec">
+          <h2>شفائي بيديا</h2>
+          <ul>
+            <li><a href="">شفائي بيديا للأطباء</a></li>
+            <li><a href="">شفائي بيديا للناس</a></li>
+          </ul>
+        </div>
+        <div class="sec">
+          <h2>تواصل معنا</h2>
+          <ul>
+            <li>48 العاشر من رمضان المجاورة</li>
+            <li>01009009380</li>
+            <li>info@Shefae.com</li>
+            <li>
+              <ul class="flex space-between">
+                <li>
+                  <a href=""
+                    ><img src="img/facebook.png" alt="facebook icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="img/twitter.png" alt="twitter icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="img/instagram.png" alt="instagram icon"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>الخط الساخن الإلكتروني</div>
-    </main>
+      <div class="dark-section">
+        <ul class="flex">
+          <li><a href="">شروط الإستخدام</a></li>
+          <li><a href="">سياسة الخصوصية</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

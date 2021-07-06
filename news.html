@@ -5,18 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shefae</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
-  <body>
+  <body class="sub-page">
     <!-- Staring header -->
     <header>
-      <nav class="flex">
-        <img src="img/logo.png" alt="" />
-        <ul class="flex">
+      <nav class="flex space-between">
+        <span id="menu"><i class="fas fa-bars"></i></span>
+        <h1><img src="img/logo.png" alt="Shefae logo" /></h1>
+        <ul class="flex space-between">
           <li><a href="index.html">الرئيسية</a></li>
-          <li><a href="services.html">خدماتنا</a></li>
-          <li><a href="news.html">الأخبار</a></li>
-          <li><a href="events.html">الفاعليات</a></li>
-          <li><a href="projects.html">مشاريعنا</a></li>
+          <li id="ourServices">
+            <a href="#">خدماتنا <i class="fas fa-sort-down"></i></a>
+            <div id="servicesMenu">
+              <ul>
+                <li><a href="companies-services.html">خدمات الشركات</a></li>
+                <li><a href="personal-services.html">خدمات الأفراد</a></li>
+                <li>
+                  <a href="safety.html"
+                    >للصحة و السلامة المهنية<br />
+                    و تأمين بيئة العمل</a
+                  >
+                </li>
+
+                <li><a href="shefae-care.html">لمقدمي الخدمات الطبية</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="active" href="news.html">الأخبار</a></li>
+          <li><a href="events.html">الفعاليات</a></li>
+          <li id="ourProjects">
+            <a href="#">مشاريعنا <i class="fas fa-sort-down"></i></a>
+            <div id="projectsMenu">
+              <ul>
+                <li>
+                  <a href="shefae-sport.html">شفائي سبورت</a>
+                </li>
+                <li><a href="shefae-shop.html">شفائي شوب</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a href="partners.html">شركاؤنا</a></li>
           <li><a href="about-us.html">من نحن</a></li>
           <li><a href="contact-us.html">اتصل بنا</a></li>
@@ -24,25 +61,166 @@
       </nav>
     </header>
     <!-- Ening header -->
+    <main>
+      <section class="secondary-banner about-us-banner flex center">
+        <img src="img/Group 2538.png" alt="photo" />
+      </section>
+      <section class="about-us">
+        <div class="title">
+          <h2>الأخبار</h2>
+          <div></div>
+        </div>
+
+        <div class="flex news space-between wrap">
+          <div class="new-card">
+            <img
+              src="img/group-of-medics-walking-along-hospital-P92EJ7V-p4ubs4jg1pc2j3kt5aaheu8ygmg1pjdqbw108z45zk.png"
+              alt="news pic"
+            />
+            <h3>عنوان الخبر</h3>
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةز لقتد تم
+              توليدهذا النص من المولد النص العربيز حيث يمكنك أن تولد مثل هذا
+              النص أو العديد من النصوص الأخري
+            </p>
+          </div>
+          <div class="new-card">
+            <img
+              src="img/group-of-medics-walking-along-hospital-P92EJ7V-p4ubs4jg1pc2j3kt5aaheu8ygmg1pjdqbw108z45zk.png"
+              alt="news pic"
+            />
+            <h3>عنوان الخبر</h3>
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةز لقتد تم
+              توليدهذا النص من المولد النص العربيز حيث يمكنك أن تولد مثل هذا
+              النص أو العديد من النصوص الأخري
+            </p>
+          </div>
+          <div class="new-card">
+            <img
+              src="img/group-of-medics-walking-along-hospital-P92EJ7V-p4ubs4jg1pc2j3kt5aaheu8ygmg1pjdqbw108z45zk.png"
+              alt="news pic"
+            />
+            <h3>عنوان الخبر</h3>
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةز لقتد تم
+              توليدهذا النص من المولد النص العربيز حيث يمكنك أن تولد مثل هذا
+              النص أو العديد من النصوص الأخري
+            </p>
+          </div>
+          <div class="new-card">
+            <img
+              src="img/group-of-medics-walking-along-hospital-P92EJ7V-p4ubs4jg1pc2j3kt5aaheu8ygmg1pjdqbw108z45zk.png"
+              alt="news pic"
+            />
+            <h3>عنوان الخبر</h3>
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةز لقتد تم
+              توليدهذا النص من المولد النص العربيز حيث يمكنك أن تولد مثل هذا
+              النص أو العديد من النصوص الأخري
+            </p>
+          </div>
+          <div class="new-card">
+            <img
+              src="img/group-of-medics-walking-along-hospital-P92EJ7V-p4ubs4jg1pc2j3kt5aaheu8ygmg1pjdqbw108z45zk.png"
+              alt="news pic"
+            />
+            <h3>عنوان الخبر</h3>
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةز لقتد تم
+              توليدهذا النص من المولد النص العربيز حيث يمكنك أن تولد مثل هذا
+              النص أو العديد من النصوص الأخري
+            </p>
+          </div>
+          <div class="new-card">
+            <img
+              src="img/group-of-medics-walking-along-hospital-P92EJ7V-p4ubs4jg1pc2j3kt5aaheu8ygmg1pjdqbw108z45zk.png"
+              alt="news pic"
+            />
+            <h3>عنوان الخبر</h3>
+            <p>
+              هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةز لقتد تم
+              توليدهذا النص من المولد النص العربيز حيث يمكنك أن تولد مثل هذا
+              النص أو العديد من النصوص الأخري
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Starting footer -->
-    <h2>الأخبار</h2>
-    <div>
-      <div>
-        <img src="" alt="" />
-        <h3>عنوان الخبر</h3>
-        <p>
-          شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية شفائي
-          كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية شفائي كير
-          شركة مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية شفائي كير شركة
-          مساهمة مصرية ذات رؤية خاصة لتطوير الرعاية الطبية شفائي كير شركة مساهمة
-          مصرية ذات رؤية خاصة لتطوير الرعاية الطبية شفائي كير شركة مساهمة مصرية
-          ذات رؤية خاصة لتطوير الرعاية الطبية شفائي كير شركة مساهمة مصرية ذات
-          رؤية خاصة لتطوير الرعاية الطبية شفائي كير شركة مساهمة مصرية ذات رؤية
-          خاصة لتطوير الرعاية الطبية شفائي كير شركة مساهمة مصرية ذات رؤية خاصة
-          لتطوير الرعاية الطبية شفائي كير شركة مساهمة مصرية ذات رؤية خاصة لتطوير
-          الرعاية الطبية
-        </p>
+    <footer>
+      <div class="flex space-between light-back">
+        <img src="img/logo.png" alt="Shefae logo" class="logo" />
+        <div class="sec">
+          <h2>خدمات شفائي</h2>
+          <ul>
+            <li><a href="shefae-shop.html">شفائي شوب</a></li>
+            <li><a href="shefae-sport.html">شفائي سبورت</a></li>
+            <li><a href="companies-services.html">خدمات الشركات</a></li>
+            <li><a href="personal-services.html">خدمات الأفراد</a></li>
+            <li>
+              <a href="safety.html"
+                >للصحة و السلامة المهنية<br />
+                و تأمين بيئة العمل</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sec">
+          <h2>الموقع</h2>
+          <ul>
+            <li><a href="about-us.html">من نحن</a></li>
+            <li><a href="vision-messege.html">الرؤية و الرسالة</a></li>
+            <li><a href="goals.html">الأهداف</a></li>
+
+            <li><a href="">خدمات الشركة</a></li>
+            <li><a href="companies-services.html">خدمات الشركات</a></li>
+            <li><a href="personal-services.html">خدمات الأفراد</a></li>
+            <li><a href="contact-us.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="sec">
+          <h2>شفائي بيديا</h2>
+          <ul>
+            <li><a href="">شفائي بيديا للأطباء</a></li>
+            <li><a href="">شفائي بيديا للناس</a></li>
+          </ul>
+        </div>
+        <div class="sec">
+          <h2>تواصل معنا</h2>
+          <ul>
+            <li>48 العاشر من رمضان المجاورة</li>
+            <li>01009009380</li>
+            <li>info@Shefae.com</li>
+            <li>
+              <ul class="flex space-between">
+                <li>
+                  <a href=""
+                    ><img src="img/facebook.png" alt="facebook icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="img/twitter.png" alt="twitter icon"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="img/instagram.png" alt="instagram icon"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <div class="dark-section">
+        <ul class="flex">
+          <li><a href="">شروط الإستخدام</a></li>
+          <li><a href="">سياسة الخصوصية</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
