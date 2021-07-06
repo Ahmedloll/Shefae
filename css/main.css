@@ -225,7 +225,7 @@ main .logos {
     filter: grayscale(100%);
     opacity: 0.5;
     transition: all 0.5s;
-    object-fit: contain; }
+    object-fit: cover; }
     @media (max-width: 840px) {
       main .logos img {
         width: 17%; } }
@@ -558,7 +558,7 @@ main .app {
         width: 80%; } }
     .sub-page .partners .partner-card img {
       width: 100%;
-      object-fit: contain; }
+      object-fit: cover; }
 .sub-page .news {
   flex-wrap: wrap;
   margin-bottom: 225px; }

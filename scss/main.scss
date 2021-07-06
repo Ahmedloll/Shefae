@@ -269,7 +269,7 @@ main {
       filter: grayscale(100%);
       opacity: 0.5;
       transition: all 0.5s;
-      object-fit: contain;
+      object-fit: cover;
 
       @media (max-width: 840px) {
         width: 17%;
@@ -694,11 +694,11 @@ main {
       }
       img {
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
   }
-  
+
   .news {
     flex-wrap: wrap;
     margin-bottom: 225px;
