@@ -269,14 +269,13 @@ main {
       filter: grayscale(100%);
       opacity: 0.5;
       transition: all 0.5s;
-      object-fit: cover;
-
       @media (max-width: 840px) {
         width: 17%;
       }
       @media (max-width: 650px) {
         width: 25%;
-        padding: 1%;
+        padding: 0 1%;
+        object-fit: contain;
       }
 
       &:hover {
@@ -694,11 +693,12 @@ main {
       }
       img {
         width: 100%;
-        object-fit: cover;
+        @media (max-width: 450px) {
+          object-fit: contain;
+        }
       }
     }
   }
-
   .news {
     flex-wrap: wrap;
     margin-bottom: 225px;

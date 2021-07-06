@@ -224,15 +224,15 @@ main .logos {
     width: 12%;
     filter: grayscale(100%);
     opacity: 0.5;
-    transition: all 0.5s;
-    object-fit: cover; }
+    transition: all 0.5s; }
     @media (max-width: 840px) {
       main .logos img {
         width: 17%; } }
     @media (max-width: 650px) {
       main .logos img {
         width: 25%;
-        padding: 1%; } }
+        padding: 0 1%;
+        object-fit: contain; } }
     main .logos img:hover {
       transform: scale(1.3);
       filter: none;
@@ -557,8 +557,10 @@ main .app {
       .sub-page .partners .partner-card {
         width: 80%; } }
     .sub-page .partners .partner-card img {
-      width: 100%;
-      object-fit: cover; }
+      width: 100%; }
+      @media (max-width: 450px) {
+        .sub-page .partners .partner-card img {
+          object-fit: contain; } }
 .sub-page .news {
   flex-wrap: wrap;
   margin-bottom: 225px; }
