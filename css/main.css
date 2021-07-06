@@ -216,7 +216,8 @@ main .sub-banner {
   border-radius: 18px; }
 main .logos {
   padding: 20px 11.5vw;
-  box-shadow: 0px 3px 15px #00000029; }
+  box-shadow: 0px 3px 15px #00000029;
+  align-items: flex-start; }
   @media (max-width: 650px) {
     main .logos {
       justify-content: center; } }
