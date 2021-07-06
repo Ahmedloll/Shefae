@@ -472,6 +472,9 @@ main {
       form {
         position: relative;
         width: fit-content;
+        @media (max-width: 750px) {
+          width: 100%;
+        }
         input {
           background: #efefef 0% 0% no-repeat padding-box;
           border-radius: 30px 5px 5px 30px;
@@ -479,6 +482,9 @@ main {
           width: 30vw;
           height: 55px;
           padding: 0 20px;
+          @media (max-width: 750px) {
+            width: 100%;
+          }
         }
         button {
           position: absolute;

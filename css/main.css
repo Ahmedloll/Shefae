@@ -384,6 +384,9 @@ main .app {
     main .app .left-sec form {
       position: relative;
       width: fit-content; }
+      @media (max-width: 750px) {
+        main .app .left-sec form {
+          width: 100%; } }
       main .app .left-sec form input {
         background: #efefef 0% 0% no-repeat padding-box;
         border-radius: 30px 5px 5px 30px;
@@ -391,6 +394,9 @@ main .app {
         width: 30vw;
         height: 55px;
         padding: 0 20px; }
+        @media (max-width: 750px) {
+          main .app .left-sec form input {
+            width: 100%; } }
       main .app .left-sec form button {
         position: absolute;
         padding: 20px;
