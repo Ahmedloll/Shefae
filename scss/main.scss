@@ -693,9 +693,8 @@ main {
       }
       img {
         width: 100%;
-        @media (max-width: 450px) {
-          object-fit: contain;
-        }
+        display: flex;
+        align-items: flex-start;
       }
     }
   }

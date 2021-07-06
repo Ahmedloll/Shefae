@@ -557,10 +557,9 @@ main .app {
       .sub-page .partners .partner-card {
         width: 80%; } }
     .sub-page .partners .partner-card img {
-      width: 100%; }
-      @media (max-width: 450px) {
-        .sub-page .partners .partner-card img {
-          object-fit: contain; } }
+      width: 100%;
+      display: flex;
+      align-items: flex-start; }
 .sub-page .news {
   flex-wrap: wrap;
   margin-bottom: 225px; }
