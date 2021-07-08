@@ -510,10 +510,17 @@ main .app {
       padding: 0px 5vw; } }
   .sub-page .about-us h3 {
     color: #305069; }
+  .sub-page .about-us img {
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 20px; }
   .sub-page .about-us p {
     color: #aaaaaa;
     font-weight: 600;
     font-size: 12px; }
+  .sub-page .about-us p.date {
+    align-self: flex-end; }
   .sub-page .about-us .imgs {
     margin-top: 100px; }
     @media (max-width: 430px) {
