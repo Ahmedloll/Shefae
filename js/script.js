@@ -55,9 +55,7 @@ window.addEventListener("click", function (e) {
 });
 window.addEventListener("click", function (e) {
   let services_menu = document.querySelector("#servicesMenu");
-  console.log(services_menu);
-  console.log(e.target);
-  console.log(document.getElementById("ourServices"));
+
   if (
     !services_menu.contains(e.target) &&
     e.target != document.querySelector("#ourServices a") &&
@@ -68,9 +66,7 @@ window.addEventListener("click", function (e) {
 });
 window.addEventListener("click", function (e) {
   let services_menu = document.querySelector("#projectsMenu");
-  console.log(services_menu);
-  console.log(e.target);
-  console.log(document.getElementById("ourProjects"));
+
   if (
     !services_menu.contains(e.target) &&
     e.target != document.querySelector("#ourProjects a") &&
