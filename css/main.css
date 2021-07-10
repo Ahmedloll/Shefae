@@ -800,6 +800,10 @@ main .app {
     width: 27px;
     height: 27px;
     background-color: #aaaaaa; }
+    @media (max-width: 750px) {
+      .sub-page .services-page .services-sec .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px; } }
   .sub-page .services-page .services-sec .swiper-pagination-bullet-active {
     background-image: linear-gradient(260deg, #397ec1, #1d3f61); }
 
