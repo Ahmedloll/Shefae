@@ -208,7 +208,7 @@ main .banner {
     height: fit-content; }
     @media (max-width: 650px) {
       main .banner img {
-        width: 60%;
+        width: 70%;
         margin: 30px 0; } }
 main .sub-banner {
   min-height: unset;
