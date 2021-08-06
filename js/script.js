@@ -41,6 +41,19 @@ function showProjectsMenu() {
     document.querySelector("#projectsMenu").classList.remove("appearDropMenu");
   }
 }
+document
+  .getElementById("media")
+  .addEventListener("click", showMediaMenu);
+function showMediaMenu() {
+  let disply = document
+    .querySelector("#mediaMenu")
+    .classList.contains("appearDropMenu");
+  if (!disply) {
+    document.querySelector("#mediaMenu").classList.add("appearDropMenu");
+  } else {
+    document.querySelector("#mediaMenu").classList.remove("appearDropMenu");
+  }
+}
 // close menus when clicked outside
 window.addEventListener("click", function (e) {
   let side_menu = document.querySelector("nav ul.flex");
@@ -73,5 +86,16 @@ window.addEventListener("click", function (e) {
     e.target != document.querySelector("#ourProjects i")
   ) {
     document.querySelector("#projectsMenu").classList.remove("appearDropMenu");
+  }
+});
+window.addEventListener("click", function (e) {
+  let media_menu = document.querySelector("#mediaMenu");
+
+  if (
+    !media_menu.contains(e.target) &&
+    e.target != document.querySelector("#media a") &&
+    e.target != document.querySelector("#media i")
+  ) {
+    document.querySelector("#mediaMenu").classList.remove("appearDropMenu");
   }
 });

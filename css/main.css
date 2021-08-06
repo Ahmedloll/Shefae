@@ -113,7 +113,8 @@ header nav {
         color: #397ec1;
         text-decoration: underline; }
     header nav ul.flex #servicesMenu,
-    header nav ul.flex #projectsMenu {
+    header nav ul.flex #projectsMenu,
+    header nav ul.flex #mediaMenu {
       display: none;
       position: absolute;
       top: 75px;
@@ -124,10 +125,12 @@ header nav {
       z-index: 5; }
       @media (max-width: 960px) {
         header nav ul.flex #servicesMenu,
-        header nav ul.flex #projectsMenu {
+        header nav ul.flex #projectsMenu,
+        header nav ul.flex #mediaMenu {
           top: 120px; } }
       header nav ul.flex #servicesMenu li,
-      header nav ul.flex #projectsMenu li {
+      header nav ul.flex #projectsMenu li,
+      header nav ul.flex #mediaMenu li {
         border-bottom: 1px solid lightgray; }
     @media (max-width: 960px) {
       header nav ul.flex #servicesMenu {
@@ -160,6 +163,7 @@ header nav {
     display: initial; } }
 
 ul.flex #servicesMenu.appearDropMenu,
+ul.flex #mediaMenu.appearDropMenu,
 ul.flex #projectsMenu.appearDropMenu {
   display: initial; }
 
@@ -326,7 +330,8 @@ main .vision {
       main .vision .card .text h3 {
         font-size: 16px;
         font-weight: 200;
-        margin-top: 0; }
+        margin-top: 0;
+        color: #397ec1; }
       main .vision .card .text p {
         margin: 0;
         font-size: 13px;

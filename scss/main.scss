@@ -136,7 +136,8 @@ header {
       }
 
       #servicesMenu,
-      #projectsMenu {
+      #projectsMenu,
+      #mediaMenu {
         display: none;
         position: absolute;
         top: 75px;
@@ -191,6 +192,7 @@ ul.flex.appear {
   }
 }
 ul.flex #servicesMenu.appearDropMenu,
+ul.flex #mediaMenu.appearDropMenu,
 ul.flex #projectsMenu.appearDropMenu {
   display: initial;
 }
@@ -389,6 +391,7 @@ main {
           font-size: 16px;
           font-weight: 200;
           margin-top: 0;
+          color: #397ec1;
         }
         p {
           margin: 0;
